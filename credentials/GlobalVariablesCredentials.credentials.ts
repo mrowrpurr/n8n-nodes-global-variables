@@ -1,12 +1,12 @@
-import { ICredentialType, INodeProperties } from "n8n-workflow"
+import { Icon, ICredentialType, INodeProperties } from "n8n-workflow"
 
 export const GLOBAL_VARIABLES_CREDENTIALS_NAME = "globalVariablesApi"
 
-const BOOL_COUNT = 2
-const NUMBER_COUNT = 2
-const JSON_COUNT = 2
-const SECRET_COUNT = 5
-const STRING_COUNT = 20
+const BOOL_COUNT = 5
+const NUMBER_COUNT = 5
+const JSON_COUNT = 5
+const SECRET_COUNT = 10
+const STRING_COUNT = 25
 
 const booleanFields = Array.from({ length: BOOL_COUNT }, (_, i) => {
 	const index = i + 1
@@ -112,6 +112,7 @@ export class GlobalVariablesCredentials implements ICredentialType {
 	// eslint-disable-next-line n8n-nodes-base/cred-class-field-display-name-missing-api
 	displayName = "Global Variables"
 	description = "Global variables"
+	icon: Icon = "fa:file-code"
 
 	properties: INodeProperties[] = [
 		{
