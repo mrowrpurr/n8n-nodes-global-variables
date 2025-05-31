@@ -7,6 +7,12 @@
 
 ![](/screenshots/workflow-canvas.png)
 
+# Install `n8n-nodes-global-variables`
+
+> Requires self-hosted n8n
+
+![](/screenshots/install.png)
+
 # How it works
 
 ## 1. Create a `Global Variables` credential
