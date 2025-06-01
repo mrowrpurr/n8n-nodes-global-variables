@@ -54,8 +54,11 @@ export class GlobalVariables implements INodeType {
 			const vars: Record<string, T> = {}
 
 			for (let i = 1; i <= count; i++) {
-				const name = credentials[`${prefix}${i}Name`] as string
-				const raw = credentials[`${prefix}${i}Value`] as unknown as string
+				const nameKey = `${prefix}${i}Name` as keyof GlobalVariablesCredentialsData
+				const valueKey = `${prefix}${i}Value` as keyof GlobalVariablesCredentialsData
+
+				const name = credentials[nameKey]
+				const raw = credentials[valueKey]
 
 				if (name?.trim()) {
 					if (vars[name] !== undefined) {
