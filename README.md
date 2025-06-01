@@ -40,6 +40,10 @@ const STRING_COUNT = 20
 > - `10` JSON variables
 > - `10` secret variables (_password fields so the value is hidden_)
 > - `20` string variables
+>
+> ### Why don't we dynamically add these?
+> 
+> Because n8n does not support dynamic fields in credentials, e.g. the `fixedCollection` type.
 
 ![](/screenshots/cropped-booleans.png)
 
