@@ -9,7 +9,7 @@ export const GLOBAL_VARIABLES_INFO = {
 		number: 5,
 		json: 10,
 		secret: 10,
-		string: 25,
+		string: 20,
 	},
 	prefixes: {
 		boolean: "boolean",
