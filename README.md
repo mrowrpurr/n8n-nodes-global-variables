@@ -27,7 +27,7 @@
 
 const BOOL_COUNT = 5
 const NUMBER_COUNT = 5
-const JSON_COUNT = 5
+const JSON_COUNT = 10
 const SECRET_COUNT = 10
 const STRING_COUNT = 25
 
@@ -37,7 +37,7 @@ const STRING_COUNT = 25
 >
 > - `5` boolean variables
 > - `5` number variables
-> - `5` JSON variables
+> - `10` JSON variables
 > - `10` secret variables (_password fields so the value is hidden_)
 > - `25` string variables
 
