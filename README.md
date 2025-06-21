@@ -4,7 +4,7 @@
 >
 > https://github.com/umanamente/n8n-nodes-globals
 >
-> _At the time of creation of this node, the `n8n-nodes-globals` did not support JSON variables._  
+> _At the time of the creation of `n8n-nodes-global-variables`, the `n8n-nodes-globals` did not support JSON variables._  
 > _And even still I enjoy being able to organize my variables into multiple named variables._  
 > _Personal preference!_
 
