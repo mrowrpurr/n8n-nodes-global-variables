@@ -32,7 +32,7 @@
 >
 > If you want to organize your variables into more than 10 named variables, you can create multiple credentials.
 
-<img src="screenshots/v0.0.5/named-credential-with-values.png" width="500" />
+<img src="screenshots/v0.0.5/named-credential-with-values.png" width="650" />
 
 ## 3. Add a `Global Variables` node in your workflow
 
