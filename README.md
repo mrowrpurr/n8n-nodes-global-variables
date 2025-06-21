@@ -42,9 +42,9 @@
 
 <img src="screenshots/workflow-canvas.png" width="400" />
 
-<img src="screenshots/node-choode-credential.png" width="400" />
+<img src="screenshots/v0.0.5/open-node-create-credential-dropdown.png" width="400" />
 
-<img src="screenshots/node-all-variables-in-one-key.png" width="400" />
+<img src="screenshots/v0.0.5/populated-node.png" width="400" />
 
 ## That's it!
 
