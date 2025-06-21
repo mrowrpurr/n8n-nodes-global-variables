@@ -29,6 +29,8 @@
 > The credential stores up to 10 named variables with values.
 >
 > _Note: I found that up to 50 work, but it slows down loading of the credential UI. Fork the code if you want up to 50._
+>
+> If you want to organize your variables into more than 10 named variables, you can create multiple credentials.
 
 ![](/screenshots/v0.0.5/named-credential-with-values.png)
 
