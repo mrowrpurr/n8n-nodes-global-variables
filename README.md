@@ -8,13 +8,13 @@
 > _And even still I enjoy being able to organize my variables into multiple named variables._  
 > _Personal preference!_
 
-<img src="screenshots/workflow-canvas.png" width="400" />
+<img src="screenshots/workflow-canvas.png" width="600" />
 
 # Install `n8n-nodes-global-variables`
 
 > Requires self-hosted n8n
 
-<img src="screenshots/install.png" width="400" />
+<img src="screenshots/install.png" width="600" />
 
 # How it works
 
@@ -22,7 +22,7 @@
 
 > Note: you can have as many of these as you want to organize your variables.
 
-<img src="screenshots/search-credential.png" width="400" />
+<img src="screenshots/search-credential.png" width="600" />
 
 ## 2. Add some variables with names and values
 
@@ -32,41 +32,41 @@
 >
 > If you want to organize your variables into more than 10 named variables, you can create multiple credentials.
 
-<img src="screenshots/v0.0.5/named-credential-with-values.png" width="400" />
+<img src="screenshots/v0.0.5/named-credential-with-values.png" width="600" />
 
 ## 3. Add a `Global Variables` node in your workflow
 
 > Choose the credential you created in step 1.
 
-<img src="screenshots/search-nodes.png" width="400" />
+<img src="screenshots/search-nodes.png" width="600" />
 
-<img src="screenshots/workflow-canvas.png" width="400" />
+<img src="screenshots/workflow-canvas.png" width="600" />
 
-<img src="screenshots/v0.0.5/open-node-create-credential-dropdown.png" width="400" />
+<img src="screenshots/v0.0.5/open-node-create-credential-dropdown.png" width="600" />
 
-<img src="screenshots/v0.0.5/populated-node.png" width="400" />
+<img src="screenshots/v0.0.5/populated-node.png" width="600" />
 
 ## That's it!
 
 Wherever the node is used, its variables will be available in the workflow after the node is executed in `$json`.
 
-<img src="screenshots/one-key-table.png" width="400" />
+<img src="screenshots/one-key-table.png" width="600" />
 
 ### `$json.vars.X`
 
 If you choose `Put All Variables in One Key` in the node options, all variables will be available under the `$json.<the name you chose>` key.
 
-<img src="screenshots/v0.0.5/schema-output.png" width="400" />
+<img src="screenshots/v0.0.5/schema-output.png" width="600" />
 
-<img src="screenshots/v0.0.5/json-output.png" width="400" />
+<img src="screenshots/v0.0.5/json-output.png" width="600" />
 
 ### `$json.X`
 
 If you disable `Put All Variables in One Key` in the node options, each variable will be available under its own key in `$json`.
 
-<img src="screenshots/not-one-key-table.png" width="400" />
+<img src="screenshots/not-one-key-table.png" width="600" />
 
-<img src="screenshots/not-one-key-json.png" width="400" />
+<img src="screenshots/not-one-key-json.png" width="600" />
 
 ## Does not overwrite existing variables
 
@@ -74,9 +74,9 @@ If you have existing variables in your workflow, the `Global Variables` node wil
 
 It will only add the variables that are defined in the credential.
 
-<img src="screenshots/workflow-canvas-with-edit-fields.png" width="400" />
+<img src="screenshots/workflow-canvas-with-edit-fields.png" width="600" />
 
-<img src="screenshots/show-existing-value.png" width="400" />
+<img src="screenshots/show-existing-value.png" width="600" />
 
 ## Expressions
 
