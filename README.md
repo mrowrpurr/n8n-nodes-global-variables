@@ -8,13 +8,13 @@
 > _And even still I enjoy being able to organize my variables into multiple named variables._  
 > _Personal preference!_
 
-![](/screenshots/workflow-canvas.png)
+<img src="screenshots/workflow-canvas.png" width="400" />
 
 # Install `n8n-nodes-global-variables`
 
 > Requires self-hosted n8n
 
-![](/screenshots/install.png)
+<img src="screenshots/install.png" width="400" />
 
 # How it works
 
@@ -22,7 +22,7 @@
 
 > Note: you can have as many of these as you want to organize your variables.
 
-![](/screenshots/search-credential.png)
+<img src="screenshots/search-credential.png" width="400" />
 
 ## 2. Add some variables with names and values
 
@@ -32,41 +32,41 @@
 >
 > If you want to organize your variables into more than 10 named variables, you can create multiple credentials.
 
-![](/screenshots/v0.0.5/named-credential-with-values.png)
+<img src="screenshots/v0.0.5/named-credential-with-values.png" width="400" />
 
 ## 3. Add a `Global Variables` node in your workflow
 
 > Choose the credential you created in step 1.
 
-![](/screenshots/search-nodes.png)
+<img src="screenshots/search-nodes.png" width="400" />
 
-![](/screenshots/workflow-canvas.png)
+<img src="screenshots/workflow-canvas.png" width="400" />
 
-![](/screenshots/node-choode-credential.png)
+<img src="screenshots/node-choode-credential.png" width="400" />
 
-![](/screenshots/node-all-variables-in-one-key.png)
+<img src="screenshots/node-all-variables-in-one-key.png" width="400" />
 
 ## That's it!
 
 Wherever the node is used, its variables will be available in the workflow after the node is executed in `$json`.
 
-![](/screenshots/one-key-table.png)
+<img src="screenshots/one-key-table.png" width="400" />
 
 ### `$json.vars.X`
 
 If you choose `Put All Variables in One Key` in the node options, all variables will be available under the `$json.<the name you chose>` key.
 
-![](/screenshots/v0.0.5/schema-output.png)
+<img src="screenshots/v0.0.5/schema-output.png" width="400" />
 
-![](/screenshots/v0.0.5/json-output.png)
+<img src="screenshots/v0.0.5/json-output.png" width="400" />
 
 ### `$json.X`
 
 If you disable `Put All Variables in One Key` in the node options, each variable will be available under its own key in `$json`.
 
-![](/screenshots/not-one-key-table.png)
+<img src="screenshots/not-one-key-table.png" width="400" />
 
-![](/screenshots/not-one-key-json.png)
+<img src="screenshots/not-one-key-json.png" width="400" />
 
 ## Does not overwrite existing variables
 
@@ -74,9 +74,9 @@ If you have existing variables in your workflow, the `Global Variables` node wil
 
 It will only add the variables that are defined in the credential.
 
-![](/screenshots/workflow-canvas-with-edit-fields.png)
+<img src="screenshots/workflow-canvas-with-edit-fields.png" width="400" />
 
-![](/screenshots/show-existing-value.png)
+<img src="screenshots/show-existing-value.png" width="400" />
 
 ## Expressions
 
