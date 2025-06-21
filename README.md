@@ -3,7 +3,10 @@
 > Inspired by `n8n-nodes-globals`
 >
 > https://github.com/umanamente/n8n-nodes-globals
-
+>
+> _At the time of creation of this node, the `n8n-nodes-globals` did not support JSON variables._  
+> _And even still I enjoy being able to organize my variables into multiple named variables._  
+> _Personal preference!_
 
 ![](/screenshots/workflow-canvas.png)
 
@@ -23,33 +26,11 @@
 
 ## 2. Add some variables with names and values
 
-<!--
-
-const BOOL_COUNT = 5
-const NUMBER_COUNT = 5
-const JSON_COUNT = 10
-const SECRET_COUNT = 10
-const STRING_COUNT = 20
-
--->
-
-> By default, each `Global Variables` credential has the following:
+> The credential stores up to 10 named variables with values.
 >
-> - `5` boolean variables
-> - `5` number variables
-> - `10` JSON variables
-> - `10` secret variables (_password fields so the value is hidden_)
-> - `20` string variables
->
-> ### Why don't we dynamically add these?
-> 
-> Because n8n does not support dynamic fields in credentials, e.g. the `fixedCollection` type.
+> _Note: I found that up to 50 work, but it slows down loading of the credential UI. Fork the code if you want up to 50._
 
-![](/screenshots/cropped-booleans.png)
-
-![](/screenshots/json.png)
-
-![](/screenshots/text.png)
+![](/screenshots/v0.0.5/named-credential-with-values.png)
 
 ## 3. Add a `Global Variables` node in your workflow
 
@@ -73,9 +54,9 @@ Wherever the node is used, its variables will be available in the workflow after
 
 If you choose `Put All Variables in One Key` in the node options, all variables will be available under the `$json.<the name you chose>` key.
 
-![](/screenshots/one-key-table.png)
+![](/screenshots/v0.0.5/schema-output.png)
 
-![](/screenshots/one-key-json.png)
+![](/screenshots/v0.0.5/json-output.png)
 
 ### `$json.X`
 
@@ -94,6 +75,12 @@ It will only add the variables that are defined in the credential.
 ![](/screenshots/workflow-canvas-with-edit-fields.png)
 
 ![](/screenshots/show-existing-value.png)
+
+## Expressions
+
+Expressions such as `{{ $json.foo }}` work as expected!
+
+So long as `$json.foo` is available before the `Global Variables` node is executed.
 
 # Attribution
 
